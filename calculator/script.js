@@ -2,7 +2,7 @@ let currentOperand = '';
 let previousOperand = '';
 let operation = undefined;
 
-function appendNumber(number) {
+function number(number) {
     if (number === '0' && currentOperand === '0') return;
     currentOperand = currentOperand.toString() + number.toString();
     updateDisplay();
